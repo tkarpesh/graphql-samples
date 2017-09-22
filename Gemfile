@@ -52,6 +52,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development do
   gem 'faker', '~> 1.7.3'
+  gem 'graphiql-rails'
 end
 
 gem 'devise', '~> 4.3.0'
+gem 'graphql', '~> 1.6.4'
