@@ -7,5 +7,7 @@ module Types
     field :title, !types.String do
       resolve ->(project, args, ctx) { project.user.email.split('@').first + '-' + project.title }
     end
+
+    field :user, !UserType
   end
 end
