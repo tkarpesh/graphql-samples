@@ -11,6 +11,8 @@ Types::QueryType = GraphQL::ObjectType.define do
     }
   end
 
+  field :node, GraphQL::Relay::Node.field
+
   field :me, Types::UserType do
     description 'the current user'
     resolve ->(root, args, ctx) { ctx[:current_user] }
